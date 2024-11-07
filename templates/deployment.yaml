@@ -8,7 +8,7 @@ metadata:
     org: joindevops
 spec:
   # modify replicas according to your case
-  replicas: {{ .Value.deployment.replicas}}
+  replicas: {{.Value.deployment.replicas}}
   selector:
     matchLabels:
       project: expense
