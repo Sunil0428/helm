@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  labels:
+    project: expense
+    environment: dev
+    org: joindevops
+spec:
+  # modify replicas according to your case
+  replicas: {{ .Value.deployment.replicas}}
+  selector:
+    matchLabels:
+      project: expense
+      environment: dev
+      org: joindevops
+  template:
+    metadata:
+      labels:
+        project: expense
+        environment: dev
+        org: joindevops
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:{{.Value.deployment.version}}

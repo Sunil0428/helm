@@ -1,0 +1,7 @@
+deploymnet:
+  version: latest
+  replicas: 3
+
+service:
+  port: 80
+
