@@ -8,7 +8,7 @@ metadata:
     org: joindevops
 spec:
   # modify replicas according to your case
-  replicas: {{.Value.deployment.replicas}}
+  replicas: {{.Values.deployment.replicas}}
   selector:
     matchLabels:
       project: expense
@@ -23,4 +23,4 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:{{.Value.deployment.version}}
+        image: nginx:{{.Values.deployment.version}}
