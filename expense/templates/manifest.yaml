@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql
-  namespace: my-expense
+  namespace: my-expense-helm
   labels:
     app: mysql
     tier: db
@@ -29,8 +29,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata: 
-  name: mysql
-  namespace: my-expense
+  name: mysql-helm
+  namespace: my-expense-helm
 spec:
   selector:
     app: mysql
