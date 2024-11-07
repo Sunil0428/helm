@@ -1,4 +1,4 @@
-deploymnet:
+deployment:
   version: v1 
 service:
   port: 3306
