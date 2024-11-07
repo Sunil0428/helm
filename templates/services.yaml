@@ -10,5 +10,5 @@ spec:
   ports:
   - name: sample-service-port
     protocol: TCP
-    port: {{.Values.service.port}}
+    port: {{.Value.service.port}}
     targetPort: 80

@@ -1,4 +1,4 @@
-deploymnet:
+deployment:
   version: latest
   replicas: 3
 
