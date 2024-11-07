@@ -3,4 +3,4 @@ name: my-chart            # Required. The name of the chart.
 description: A Helm chart for my application # Optional but recommended.
 
 type: application         # Optional. Indicates if this is an "application" (deployable app) or "library".
-version: 1.0.0            # Required. The version of the chart itself (increment when making chart changes).
+version: 1.0.1           # Required. The version of the chart itself (increment when making chart changes).

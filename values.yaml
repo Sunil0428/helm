@@ -1,6 +1,6 @@
 deployment:
   version: latest
-  replicas: 3
+  replicas: 2
 
 service:
   port: 80
